@@ -16,6 +16,6 @@ class FinishCheckoutPage:
 
     def click_cancel(self):
         time.sleep(2)
-        WebDriverWait(self.driver, 10).until(
+        WebDriverWait(self.driver,  10).until(
             EC.element_to_be_clickable(FinishCheckoutPageLocators.CANCEL_BUTTON)
         ).click()

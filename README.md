@@ -6,12 +6,16 @@ This is a Web UI automation project built using **Python**, **Selenium WebDriver
 
 ## Project Overview
 
-This project performs automated testing on the login page of SauceDemo. It covers:
+This project performs automated testing on the login page, inventory page, cart page, checkout page, finish checkout page and complete page of SauceDemo. It covers:
 - Valid login
 - Invalid login
 - Empty fields
 - Partial inputs (only username / only password)
 - Testing with different demo users like `locked_out_user`, `problem_user`, `performance_glitch_user`, etc.
+- Adding items
+- Removing items
+- Checkout with filling input fields
+- Checkout with empty input fields
 
 Test structure follows the Page Object Model (POM) to keep code clean and reusable.
 

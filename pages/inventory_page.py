@@ -48,4 +48,3 @@ class InventoryPage:
             ).is_displayed()        #If the button is visible, return True
         except:
             return False
-

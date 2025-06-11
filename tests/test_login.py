@@ -9,7 +9,7 @@ from selenium import webdriver
 from config import config
 from pages.login_page import LoginPage
 
-@pytest.fixture                         #fixture is a special function in pytest that runs before your test starts
+@pytest.fixture                         #fixture is a special function in pytest that runs before the test starts
 def setup():
     driver = webdriver.Chrome()         #starts the browser
     driver.get(config.BASE_URL)
@@ -18,7 +18,7 @@ def setup():
     driver.quit()                       #Close the browser after the test
 
 #Valid Username and Password
-def test_valid_login(setup):            #def - Python keyword used to define a function  #test_valid_login- name of your test function and it must start with test_ so that pytest knows it’s a test case and will automatically run it
+def test_valid_login(setup):            #def - Python keyword used to define a function  #test_valid_login- name of the test function and it must start with test_ so that pytest knows it’s a test case and will automatically run it
     login = LoginPage(setup)            #creating an object of the LoginPage class which created inside login_page.py
     time.sleep(2)                               # Wait before typing username
     login.enter_username(config.USERNAME)       # correct username

@@ -8,7 +8,7 @@ class CheckoutPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def enter_first_name(self, first_name):         # first_name: The text you want to input in the "First Name" field.
+    def enter_first_name(self, first_name):         # first_name: The text want to input in the "First Name" field.
         time.sleep(2)
         WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located(CheckoutPageLocators.FIRST_NAME)
