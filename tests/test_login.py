@@ -14,7 +14,7 @@ def setup():
     driver = webdriver.Chrome()         #starts the browser
     driver.get(config.BASE_URL)
     driver.maximize_window()            #Maximize browser window
-    yield driver                        #Give the browser to the test so it can use it
+    yield driver                        #Give the browser to the test so it can use it 
     driver.quit()                       #Close the browser after the test
 
 #Valid Username and Password
